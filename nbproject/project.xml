@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>AP_Java_Bank_Inheritance</name>
+            <name>AP_Java_OOP_Bank_Inheritance</name>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
