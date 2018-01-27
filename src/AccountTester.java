@@ -50,6 +50,7 @@ public class AccountTester
         
         CheckingAccount donChecking = new CheckingAccount(30);
         CheckingAccount donnaChecking = new CheckingAccount(30);
+        System.out.println("\n\nNote the counter rising!");
         System.out.println("Using CheckingAccount toString: " + timChecking);
         System.out.println("Using CheckingAccount toString: " + donChecking);
         System.out.println("Using CheckingAccount toString: " + donnaChecking);
@@ -64,13 +65,20 @@ public class AccountTester
         BankAccount[] accounts = new BankAccount[100];
         accounts[0] = momSavings ;
         accounts[1] = timChecking;
+        accounts[2] = donnaChecking;
         
+        // Wouldn't work:
         //accounts[0].addInterest();
-        
+        // will work
         SavingsAccount s1 = (SavingsAccount) accounts[0];
         s1.addInterest();
         
         momSavings.addInterest();
+        
+        // in Java, the object determines which function is called.
+        System.out.println("\n\nUsing the array, trying to print a checking account.");
+        System.out.println("donnaChecking :: " + accounts[2]);
+        
         
     }
         
