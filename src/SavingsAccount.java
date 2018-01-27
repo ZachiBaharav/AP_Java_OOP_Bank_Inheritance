@@ -38,4 +38,8 @@ public class SavingsAccount extends BankAccount
     }
 
     
+    public String toString() {
+        return "Saving account. Interest rate=" + interestRate + " and " + super.toString() ;
+    }
+    
 }

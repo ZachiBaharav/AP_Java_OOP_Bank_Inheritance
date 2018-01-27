@@ -5,7 +5,8 @@
 public class BankAccount 
 {
     private double balance;
-
+    
+    
     public BankAccount()
     {
         balance = 0;
@@ -53,4 +54,10 @@ public class BankAccount
         other.deposit(amount);
     }
     
+    // later on
+    
+    public String toString() {        
+        return "[balance=" + balance +"]";
+    }
+  
 }

@@ -7,6 +7,15 @@ public class CheckingAccount extends BankAccount
     private static final int FREE_TRANSACTIONS = 2;
     private static final double TRANSACTION_FEE = 2.0;
     
+    
+    // Only later on, to demonstrate class varaibles
+    // then also do the toString
+    private static int accountNumberCounter = 0;
+    private final int accountNumber;    // can be initilaized in constructor!
+    
+
+    
+    
     public CheckingAccount(double initBalance)
     {
         // private!! balance = initBalance ;
@@ -16,6 +25,9 @@ public class CheckingAccount extends BankAccount
         // HAS TO BE the first line in the constructor
         // If ommitted, the non-parameter constructor is called.
         transactionsCount = 0;
+        
+        accountNumber = accountNumberCounter++ ;
+
     }
     
     public void deposit(double amount)
@@ -46,4 +58,11 @@ public class CheckingAccount extends BankAccount
         }
         transactionsCount = 0;
     }    
+    
+    // to add only after account numbers
+    public String toString() {
+        return "Checking account number "+ accountNumber +". transactionCount=" + transactionsCount + " and " + super.toString() ;
+    }
+    
+    
 }

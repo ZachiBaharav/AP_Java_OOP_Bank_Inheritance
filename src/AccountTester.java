@@ -37,8 +37,23 @@ public class AccountTester
         
         // toString method
         
+        // All are inheriting from Object (< the ultimate super class)
+        // If we use without overriding, just the hash-code of the class
+        // if we override ;nice.
+        System.out.println("Using BankAccount toString: " + myAccount);
+        System.out.println("Using SavingsAccount toString: " + momSavings);
         
         
+        //========
+        // Static counter
+        // Class variable
+        
+        CheckingAccount donChecking = new CheckingAccount(30);
+        CheckingAccount donnaChecking = new CheckingAccount(30);
+        System.out.println("Using CheckingAccount toString: " + timChecking);
+        System.out.println("Using CheckingAccount toString: " + donChecking);
+        System.out.println("Using CheckingAccount toString: " + donnaChecking);
+
         
         // some more advanced stuff
         SavingsAccount collegeFund = new SavingsAccount(10);
